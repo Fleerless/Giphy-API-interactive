@@ -35,7 +35,7 @@ $(document).ready(function(){
         limit = 10;
         $.ajax({
             method: "GET",
-            url: "http://api.giphy.com/v1/gifs/search?q="+term+"&api_key="+APIkey+"&limit="+limit
+            url: "https://api.giphy.com/v1/gifs/search?q="+term+"&api_key="+APIkey+"&limit="+limit
         }).then(function(response) {
             var items = response.data;
             console.log(response);
@@ -103,7 +103,7 @@ $(document).ready(function(){
         limit += 10;
         $.ajax({
             method: "GET",
-            url: "http://api.giphy.com/v1/gifs/search?q="+term+"&api_key="+APIkey+"&limit="+limit
+            url: "https://api.giphy.com/v1/gifs/search?q="+term+"&api_key="+APIkey+"&limit="+limit
         }).then(function(response) {
             var items = response.data;
             console.log("items:", items);
